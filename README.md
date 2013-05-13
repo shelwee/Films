@@ -13,5 +13,5 @@
 
 关于系统运行
 -------------
-1.将films.sql导入mysql数据库。
+1.将films.sql导入mysql数据库。<br />
 2.将项目导入eclipse中，开启Tomcat服务器即可运行。
