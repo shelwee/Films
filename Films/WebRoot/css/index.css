@@ -1,0 +1,121 @@
+body{
+	background-color: #E8EFF5;
+}
+.wrap{
+	width: 1002px;	
+	margin: 0 auto;
+	background-color: #E8EFF5;
+}
+.content{
+	margin-top: 0;
+}
+.content .tab{
+	background:url(../images/card_t.png) 0 38px no-repeat;
+}
+.content .tab ul.tab_nav li{
+	float:left;
+	width:183px;
+	height:39px;
+	line-height:39px;
+	color:#069;
+	font-weight:bold;
+	text-indent:50px;
+}
+.content .tab ul.tab_nav li a { display:block; width:183px;	height:39px; color:#069;background:url(../images/card_index_n.png);}
+.content .tab ul.tab_nav li a:focus {
+     outline:none;
+     -moz-outline:none;
+}
+.content .tab ul.tab_nav li.jiang a{	background:url(../images/card_i_n.png);}
+.content .tab ul.tab_nav li a span{ color:#C36; padding-left:5px; font-weight:normal;}
+.content .tab ul.tab_nav li a.selected{
+	background:url(../images/card_index_o.png);
+}
+.content .tab ul.tab_nav li.jiang a.selected{
+	background:url(../images/card_i_o.png);
+}
+.content .tab .items{
+	display:none;
+	margin-top:5px;
+	width:761px;
+	background:url(../images/card_m.gif) repeat-y;	
+}
+.content .tab .items .i_f_more a{
+	float:right;
+	background:url(../images/more_lan.gif) right center no-repeat;
+	margin:5px 40px 0 0;
+	padding-right:10px;
+	color:#e5231b;
+}
+.content .tab .items ul{ margin-left:14px;}
+.content .tab .items li{ margin:11px 9px; _margin:11px 8px; float:left; width:165px; height:230px; overflow:hidden;}
+.content .tab .items li a.img{
+	position:relative;
+	display:block;
+	background:url(../images/card_box_bg.gif);
+	width:162px;
+	height:95px;
+	padding:3px 0 0 3px;
+}
+.content .tab .items li a.img img{width:159px; height:93px;}
+.content .tab .items li a.img img.new{
+	position:absolute;
+	top:10px;
+	left:10px;
+	z-index:20;
+	width:32px;
+	height:31px;
+}
+.content .tab .items li dt,.content .tab .items li dd{
+	margin-top:8px;
+	color:#000;
+}
+.content .tab .items li dt a,.content .tab .items li dd strong{
+	font-weight:bold;
+	color:#000;
+}
+.content .tab .items li dd a{
+	display:block;
+	background:url(../images/bt_lan.gif);
+	width:87px;
+	height:26px;
+	line-height:26px;
+	text-indent:20px;
+	color:#FFF;
+	margin-left:70px;
+}
+.content .tab .items li dd.role{ color:#06C;}
+.content .tab .tab_b{
+	height:15px;
+	width:761px;
+	background:url(../images/card_b.gif) top no-repeat;
+	
+}
+
+.js{width:761px; height:208px; margin-top:10px; margin-bottom:10px;}
+.js_img{ width:631px; height:209px; float:left; z-index:99;position:absolute;}
+.js_font{float:left; width:137px; z-index:100; position:absolute;left:59%;}
+/*windows系统的left属性为755px*/
+.js_font .f_1{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer; padding-top:5px;
+	height:47px;background-image: url(../images/js2_03.gif); color:#fff;}
+.js_font .f_2{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer; padding-top:5px;
+	height:47px;background-image: url(../images/js_05.gif); color:#fff;}
+.js_font .f_3{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer;  padding-top:5px;
+	height:47px;background-image: url(../images/js_07.gif); color:#fff;}
+
+.js_font .f_a{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer; 
+	 padding-top:5px;height:47px;background-image: url(../images/js_03.gif); color:#2999db;}
+.js_font .f_b{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer; 
+	 padding-top:5px;height:47px;background-image: url(../images/js2_06.gif); color:#2999db;}
+.js_font .f_c{
+	width:111px;padding-left:26px;z-index:100;float:left;cursor:pointer; 
+	 padding-top:5px;height:47px;background-image: url(../images/js2_07.gif); color:#2999db;}
+.fhall{
+	font-size: 12px;
+	color: #fff;
+}

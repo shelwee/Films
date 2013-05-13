@@ -1,0 +1,37 @@
+@import url(v2_layout.css);
+.eidtor .cap .ico{width:124px; background-position:0 -140px; }
+.tab_box{padding:25px 0 0;}
+.tab{height:37px; padding-left:22px;}
+.tab li{float:left; width:179px; height:37px; font:normal 14px/37px "宋体"; text-align:center; color:#2078b7; background:url(../../images/member/tab.gif) no-repeat; margin-right:1px;}
+.tab li.cur{background-position:0 -37px; color:#FFF;}
+.tab li.cur b{background-position:0 center;}
+.tab li b{background:url(../../images/member/tab_arr.gif) no-repeat -200px center; padding-left:15px; cursor:pointer;}
+.tab_body{border-top:3px solid #00689e; display:none;}
+.tab_body div.table{border:1px solid #c6c6c6; border-width:0 1px;}
+.tab_body table{border-collapse:separate;}
+.tab_body table .detail{display:none;}
+.tab_body .detail td{padding:0;}
+.tab_body table th{height:26px; font:bold 12px/26px "宋体"; white-space:nowrap; background:url(../../images/member/th.gif) repeat-x; text-align:center; border-bottom:1px solid #c6c6c6;}
+.tab_body table td{font:12px/21px "宋体"; text-align:center; background:#deedf1; border-top:1px solid #FFF; border-bottom:1px solid #c6c6c6; padding:10px 3px;}
+.tab_body table .ou td{background:#f1f1f1;}
+.tab_body table td b.handler{display:inline-block; zoom:1; width:72px; word-wrap:break-word; text-align:left; line-height:14px; font-weight:normal; background:url(../../images/member/handler.gif) no-repeat 0 center; padding-left:20px; cursor:pointer; overflow:hidden;}
+.tab_body table td b.open{background-position:-300px center;}
+.tab_body table .detail td table td{text-align:left;border:0;
+ line-height:22px; background:#f6f8fa; padding:2px 0 2px 10px; vertical-align:top; }
+.tab_body table .detail td table td label{font-weight:bold;}
+.tab_body table .detail td table td img{border:1px solid #CCC;}
+/*-----------20111207-----------------------*/
+.eidtor .cap .ico2{width:44px; background-position:0 -138px;}
+.my_film{ float:left;font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;font-size:16px;color:#1c63a1;}
+.my_film2{ float:left;font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;font-size:16px;color:#969495;}
+.my_film a{ float:left;font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;font-size:16px;color:#1c63a1;}
+.my_film2 a{ float:left;font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;font-size:16px;color:#969495;}
+.my_film a:hover{ text-decoration:underline;}
+.my_film2 a:hover{ text-decoration:underline;}
+
+.ico2{ float:left;background:url(../../images/member/ico.gif) no-repeat; padding:0px 2px;}
+.page_nav b {
+background: #ABD9E7;
+padding: 1px 6px;
+font-weight: normal;
+}

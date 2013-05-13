@@ -1,0 +1,18 @@
+/* password edit*/
+.eidtor .cap .ico {
+	width: 115px;
+	background-position: 0 -90px;
+}
+.code_input{padding:20px 0 50px 50px;}
+.code_input .tp{height:20px; width:240px; margin-bottom:8px;}
+.code_input .tips{background:url(../images/q_tip_ico.png) left center no-repeat; height:20px; width:245px; line-height:20px; padding-left:25px; border:1px solid #F33; color:#C00; display:none;}
+.code_input fieldset{line-height:22px; vertical-align:middle; padding-bottom:10px;border: 0;}
+.code_input fieldset.at{height:20px; line-height:20px;}
+.code_input fieldset span{color:#ec51b4; padding-left:12px;}
+.code_input label{float:left; width:136px; height:12px; line-height:12px; text-align:right; border-right:1px solid #45acd0; padding-right:4px; margin:7px 10px 0 0;}
+.code_input label .ico{background:url(../images/s_arr.gif) no-repeat 0 center; padding:0 4px;}
+.code_input input{float:left; font-size:14px; line-height:20px; width:180px; height:22px; color:#666; border:1px solid #5a7a97; padding:1px;}
+.code_input input.on{border:2px solid #39C; color:#39C;}
+.code_input input#au_to{height:20px; line-height:20px; width:20px; margin-left:75px;}
+.code_input label.auto{width:auto; background:none;}
+.code_input a#q_login_submit{float:left; background:url(../images/bt_lan.gif) no-repeat; width:87px; height:26px; line-height:26px; text-align:center; color:#FFF; text-decoration:none; margin-left:152px;}

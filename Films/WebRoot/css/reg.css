@@ -1,0 +1,59 @@
+.content {
+    color: #454545;
+    margin-top: 15px;
+    overflow: hidden;
+    width: inherit;
+}
+
+.cap .ico {
+    background-position: 0 -95px;
+    width: 81px;
+}
+.cap .ico {
+    float: left;
+    height: 35px;
+    margin: 2px 0 0 15px;
+    padding: 0;
+    width: 81px;
+    background-image: url("../images/ico_reg.gif");
+}
+#reg_form{
+	padding-left: 300px;
+}
+#reg_form fieldset{
+	margin: 20px ;
+}
+.input_form {
+    padding: 32px 0 20px;
+}
+.input_form label {
+    width: 324px;
+}
+.input_form label em {
+    color: red;
+    font-style: normal;
+    padding-right: 8px;
+}
+.input_form .btns {
+    padding: 20px 0 0 110px;
+}
+.pad_label {
+    padding-left: 90px;
+}
+.reg_form .ipt {
+    border: 1px solid #5A7A97;
+    color: #666666;
+    height: 33px;
+    line-height: 32px;
+    padding: 1px;
+    width: 200px;
+}
+.reg_form label {
+    margin-top: 14px;
+}
+.reg_form label.no {
+    margin-top: 9px;
+}
+.reg_form select {
+    border: 2px solid red;
+}

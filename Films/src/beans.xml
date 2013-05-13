@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+<context:annotation-config/>
+<!-- 配置databaseSource -->
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	    <property name="driverClassName" value="org.gjt.mm.mysql.Driver"/>
+	    <property name="url" value="jdbc:mysql://localhost:3306/films?useUnicode=true&amp;characterEncoding=utf-8"/>
+	    <property name="username" value="root"/>
+	    <property name="password" value="mysqladmin"/>
+	     <!-- 连接池启动时的初始值 -->
+	<property name="initialSize" value="3"/>
+	 <!-- 连接池的最大值 -->
+	 <property name="maxActive" value="500"/>
+ <!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+	<property name="maxIdle" value="2"/>
+	<!--  最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+	<property name="minIdle" value="1"/>
+</bean>
+
+<!-- 配置sessionFactory -->
+<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+     <property name="dataSource" ref="dataSource"/>
+     <property name="mappingResources">
+	    <list>
+	      <value>com/films/domain/Area.hbm.xml</value>
+	      <value>com/films/domain/Film.hbm.xml</value>
+	      <value>com/films/domain/Hall.hbm.xml</value>
+	      <value>com/films/domain/Odetail.hbm.xml</value>
+	      <value>com/films/domain/Orders.hbm.xml</value>
+	      <value>com/films/domain/Seat.hbm.xml</value>
+	      <value>com/films/domain/Sort.hbm.xml</value>
+	      <value>com/films/domain/Timetable.hbm.xml</value>
+	      <value>com/films/domain/Users.hbm.xml</value>
+	      <value>com/films/domain/Filmcomment.hbm.xml</value>
+	    </list>
+     </property>
+     <property name="hibernateProperties">
+	    <value>
+	        	hibernate.dialect=org.hibernate.dialect.MySQLDialect
+	        	hibernate.hbm2ddl.auto=update
+				hibernate.show_sql=true
+				hibernate.format_sql=false
+	  </value>
+    </property>
+</bean>
+
+<!-- 配置service -->
+<bean id="userService" class="com.films.service.impl.UserService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="filmService" class="com.films.service.impl.FilmService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="sortService" class="com.films.service.impl.SortService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="areaService" class="com.films.service.impl.AreaService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="hallService" class="com.films.service.impl.HallService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="timeTableService" class="com.films.service.impl.TimeTableService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="seatService" class="com.films.service.impl.SeatService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="orderService" class="com.films.service.impl.OrderService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="ordetailService" class="com.films.service.impl.OrdetailService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id="fcService" class="com.films.service.impl.FCommService">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+<!-- 配置action -->
+<bean name="/register" class="com.films.struts.action.RegisterAction">
+<property name="userService" ref="userService"/>
+</bean>
+<bean name="/login" class="com.films.struts.action.LoginAction" >
+<property name="orderService" ref="orderService"/>
+<property name="fcService" ref="fcService"/>
+</bean>
+<bean name="/filmCenter" class="com.films.struts.action.FilmCenterAction">
+<property name="sortService" ref="sortService"/>
+<property name="areaService" ref="areaService"/>
+<property name="filmService" ref="filmService"/>
+</bean>
+<bean name="/adminspace" class="com.films.struts.action.AdminspaceAction">
+<property name="areaService" ref="areaService"/>
+<property name="sortService" ref="sortService"/>
+<property name="timeTableService" ref="timeTableService"/>
+<property name="userService" ref="userService"/>
+<property name="filmService" ref="filmService"/>
+<property name="orderService" ref="orderService"/>
+</bean>
+<bean name="/newPassword" class="com.films.struts.action.NewPasswordAction">
+<property name="userService" ref="userService"/>
+</bean>
+<bean name="/showCenter" class="com.films.struts.action.ShowCenterAction">
+<property name="filmService" ref="filmService"/>
+<property name="hallService" ref="hallService"/>
+<property name="timeTableService" ref="timeTableService"/>
+</bean>
+<bean name="/userspace" class="com.films.struts.action.UserspaceAction">
+<property name="filmService" ref="filmService"/>
+<property name="timeTableService" ref="timeTableService"/>
+<property name="orderService" ref="orderService"/>
+<property name="fcService" ref="fcService"/>
+</bean>
+<bean name="/userCenter" class="com.films.struts.action.UserCenterAction">
+<property name="userService" ref="userService"/>
+</bean>
+<bean name="/userInfo" class="com.films.struts.action.UserInfoAction">
+<property name="userService" ref="userService"/>
+</bean>
+<bean name="/movieCenter" class="com.films.struts.action.MovieCenterAction">
+<property name="filmService" ref="filmService"/>
+<property name="areaService" ref="areaService"/>
+<property name="sortService" ref="sortService"/>
+<property name="timeTableService" ref="timeTableService"/>
+</bean>
+<bean name="/index" class="com.films.struts.action.IndexAction">
+<property name="filmService" ref="filmService"/>
+<property name="timeTableService" ref="timeTableService"/>
+<property name="fcService" ref="fcService"/>
+</bean>
+<bean name="/movie" class="com.films.struts.action.MovieAction">
+<property name="filmService" ref="filmService"/>
+<property name="timeTableService" ref="timeTableService"/>
+<property name="fcService" ref="fcService"/>
+</bean>
+<bean name="/tickets" class="com.films.struts.action.TicketsAction">
+<property name="timeTableService" ref="timeTableService"/>
+<property name="orderService" ref="orderService"/>
+<property name="ordetailService" ref="ordetailService"/>
+<property name="seatService" ref="seatService"/>
+</bean>
+<bean name="/search" class="com.films.struts.action.SearchAction">
+<property name="filmService" ref="filmService"/>
+</bean>
+
+<!-- 配置事务管理器 -->
+<bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+  	<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+<tx:annotation-driven transaction-manager="txManager"/>
+</beans>

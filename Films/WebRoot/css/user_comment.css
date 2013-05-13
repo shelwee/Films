@@ -1,0 +1,43 @@
+/*user_msg.jsp*/
+.eidtor .cap .ico {
+width: 119px;
+background-position: 0 -430px;
+}
+.eidtor .cap {
+margin-bottom: 15px;
+}
+.comment_box {
+border: 1px solid #C6C6C6;
+background: #EDEDED;
+overflow: hidden;
+}
+.comment_box_panel {
+border-top: 1px solid white;
+padding: 0 15px;
+zoom: 1;
+}
+.comment_box dl {
+padding: 12px 0 15px;
+background: url(../images/dot_line2.gif) repeat-x 0 bottom;
+margin-bottom: -1px;
+overflow: hidden;
+zoom: 1;
+}
+.comment_box dt {
+float: left;
+padding-right: 16px;
+}
+.comment_box dt img {
+width: 58px;
+height: 58px;
+border: 1px solid #C6C6C6;
+}
+.comment_box dd strong {
+margin-right: 30px;
+}
+.comment_box dd {
+float: left;
+width: 690px;
+line-height: 18px;
+padding-bottom: 3px;
+}

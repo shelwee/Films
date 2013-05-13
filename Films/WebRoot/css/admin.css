@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 12px;
+}
+a{
+	color: #555555;
+	font-size: 12px;
+	text-decoration: none;
+}
+.STYLE1,.STYLE1 a{
+	color: #fff;
+	font-size: 13px;
+}
+.STYLE4 a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.STYLE10{
+	font-size: 15px;
+}
+.STYLE19,.STYLE21,.STYLE22{
+	color: #000;
+	font-size: 13px;
+}
+.STYLE21 a:hover{
+	color: #ff0000;
+	font-size: 13px;
+}
+.time{
+	font-size: 12px; 
+	color: #fff;
+}
+.admin_menu{
+	color: #fff;
+}
+a.admin_menu:hover{
+	color: #A50A5E;
+}
+.admin_bj{
+	width:1002px;
+	height:490px;
+}
+
+.content {
+    color: #454545;
+    overflow: hidden;
+    margin-top:0;
+    width: inherit;
+}
+.eidtor{width:800ox;}
+
+.cap .ico {
+    background-position: 0 -95px;
+    width: 81px;
+}
+.cap .ico {
+    float: left;
+    height: 35px;
+    margin: 2px 0 0 15px;
+    padding: 0;
+    width: 40px;
+    background-image: url("../images/ico_reg.gif");
+}
+.cap .h3{
+	font-size: 25px;
+	color: #49BADE;
+}
+#reg_form,#passwordForm{
+	padding-left: 300px;
+}
+#reg_form fieldset,#passwordForm fieldset{
+	margin: 9px ;
+}
+.input_form {
+    padding: 32px 0 20px;
+}
+.input_form label {
+    width: 324px;
+    font-size: 12px;
+}
+.input_form label em {
+    color: red;
+    font-style: normal;
+    padding-right: 8px;
+}
+.input_form .btns {
+    padding: 20px 0 0 110px;
+}
+.pad_label {
+    padding-left: 90px;
+}
+.reg_form .ipt {
+    border: 1px solid #5A7A97;
+    color: #666666;
+    height: 33px;
+    line-height: 32px;
+    padding: 1px;
+    width: 200px;
+}
+.reg_form label {
+    margin-top: 14px;
+}
+.reg_form label.no {
+    margin-top: 9px;
+}
+.reg_form select {
+    border: 2px solid #49BADE;
+}
+.err_red {
+    color: #EC51B4;
+    font-size: 12px;
+}
+
+#preview{width:196px;height:279px;overflow:hidden;float: right;margin-right: 250px;}  
+#imghead {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);} 

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    <form-bean name="registerForm" type="com.films.struts.form.RegisterForm" />
+    <form-bean name="loginForm" type="com.films.struts.form.LoginForm" />
+    <form-bean name="movieForm" type="com.films.struts.form.MovieForm" />
+    <form-bean name="newPasswordForm" type="com.films.struts.form.NewPasswordForm" />
+    <form-bean name="showTableForm" type="com.films.struts.form.ShowTableForm" />
+    <form-bean name="addUserForm" type="com.films.struts.form.AddUserForm" />
+    <form-bean name="userPhotoForm" type="com.films.struts.form.UserPhotoForm" />
+    <form-bean name="seatForm" type="com.films.struts.form.SeatForm" />
+    <form-bean name="commentsForm" type="com.films.struts.form.CommentsForm" />
+    <form-bean name="searchForm" type="com.films.struts.form.SearchForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      input="/WEB-INF/test/test.jsp"
+      parameter="flag"
+      path="/test"
+      type="com.films.struts.action.TestAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="show" path="/WEB-INF/test/show.jsp" />
+    </action>
+    <action
+      parameter="flag"
+      path="/relogin"
+      type="com.films.struts.action.ReloginAction"
+      validate="false"
+      cancellable="true">
+      <forward name="goLogin" path="/WEB-INF/public/login.jsp" />
+      <forward name="goReg" path="/WEB-INF/public/register.jsp" />
+      <forward name="goUserHome" path="/WEB-INF/user/user_home.jsp" />
+      <forward name="index" path="/WEB-INF/public/index.jsp" />
+    </action>
+    
+    
+    
+    <action
+      attribute="registerForm"
+      input="/WEB-INF/public/register.jsp"
+      name="registerForm"
+      parameter="flag"
+      path="/register"
+      scope="request"
+      type="com.films.struts.action.RegisterAction"
+      validate="false"
+      cancellable="true">
+      <forward name="regisOK" path="/WEB-INF/user/user_home.jsp" />
+      <forward name="regFail" path="/WEB-INF/public/register.jsp" />
+    </action>
+    <action
+      attribute="loginForm"
+      input="/WEB-INF/public/login.jsp"
+      name="loginForm"
+      parameter="flag"
+      path="/login"
+      scope="request"
+      type="com.films.struts.action.LoginAction"
+      validate="false"
+      cancellable="true">
+      <forward name="loginOK" path="/WEB-INF/user/user_home.jsp" />
+      
+      <forward name="loginFail" path="/WEB-INF/public/login.jsp" />
+      <forward name="login2admin" path="/WEB-INF/admin/index_center.jsp" />
+      
+    </action>
+    <action
+      parameter="flag"
+      path="/userspace"
+      type="com.films.struts.action.UserspaceAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="goUserPwd" path="/WEB-INF/user/user_pwd.jsp" />
+      <forward name="goUserOrder" path="/WEB-INF/user/my_order.jsp" />
+      <forward name="goUserInfo" path="/WEB-INF/user/user_info.jsp" />
+      <forward name="goUserComment" path="/WEB-INF/user/user_comment.jsp" />
+      <forward name="logout" path="/WEB-INF/public/index.jsp" />
+    </action>
+
+    <action
+      parameter="flag"
+      path="/adminspace"
+      type="com.films.struts.action.AdminspaceAction"
+      validate="false"
+      cancellable="true">
+      <forward name="goFilmUI" path="/WEB-INF/admin/film_center.jsp" />
+      <forward name="goUserUI" path="/WEB-INF/admin/user_center.jsp" />
+      <forward name="logout" path="/WEB-INF/public/index.jsp" />
+      
+      <forward name="goAdminUI" path="/WEB-INF/admin/index_center.jsp" />
+      <forward name="goTicketUI" path="/WEB-INF/admin/ticket_center.jsp" />
+      <forward name="goPwdUI" path="/WEB-INF/admin/pwd_center.jsp" />
+      <forward name="goPostUI" path="/WEB-INF/admin/post_center.jsp" />
+      <forward name="goMovieCenterUI" path="/WEB-INF/admin/movie_center.jsp" />
+      
+    </action>
+    <action
+      attribute="movieForm"
+      input="/WEB-INF/admin/post_center.jsp"
+      name="movieForm"
+      parameter="flag"
+      path="/filmCenter"
+      scope="request"
+      type="com.films.struts.action.FilmCenterAction"
+      validate="false"
+      cancellable="true">
+      <forward name="postOK" path="/WEB-INF/admin/post_center.jsp" />
+      
+    </action>
+    <action
+      attribute="newPasswordForm"
+      input="/WEB-INF/user/user_pwd.jsp"
+      name="newPasswordForm"
+      parameter="flag"
+      path="/newPassword"
+      scope="request"
+      type="com.films.struts.action.NewPasswordAction"
+      validate="false"
+      cancellable="true">
+      <forward name="successAdmin" path="/WEB-INF/admin/pwd_center.jsp" />
+    </action>
+    <action
+      attribute="showTableForm"
+      input="/WEB-INF/admin/addShow_center.jsp"
+      name="showTableForm"
+      parameter="flag"
+      path="/showCenter"
+      scope="request"
+      type="com.films.struts.action.ShowCenterAction"
+      validate="false"
+      cancellable="true">
+      <forward name="goAddShow" path="/WEB-INF/admin/addShow_center.jsp" />
+      <forward name="showTable" path="/WEB-INF/admin/film_center.jsp" />
+      <forward name="goEditShow" path="/WEB-INF/admin/editShow_center.jsp" />
+    </action>
+    <action
+      attribute="addUserForm"
+      input="/WEB-INF/admin/addUser.jsp"
+      name="addUserForm"
+      parameter="flag"
+      path="/userCenter"
+      scope="request"
+      type="com.films.struts.action.UserCenterAction"
+      validate="false"
+      cancellable="true">
+      <forward name="addUserUI" path="/WEB-INF/admin/addUser.jsp" />
+      <forward name="goUserCenter" path="/WEB-INF/admin/user_center.jsp" />
+      <forward name="goEditUser" path="/WEB-INF/admin/editUser.jsp" />
+    </action>
+    <action
+      attribute="userPhotoForm"
+      input="/WEB-INF/user/user_info.jsp"
+      name="userPhotoForm"
+      parameter="flag"
+      path="/userInfo"
+      scope="request"
+      type="com.films.struts.action.UserInfoAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="goUploadUI" path="/WEB-INF/user/user_info.jsp" />
+    </action>
+    <action
+      attribute="movieForm"
+      input="/WEB-INF/admin/edit_movie.jsp"
+      name="movieForm"
+      parameter="flag"
+      path="/movieCenter"
+      scope="request"
+      type="com.films.struts.action.MovieCenterAction"
+      validate="false"
+      cancellable="true">
+      <forward name="showMovie" path="/WEB-INF/admin/movie_center.jsp" />
+      <forward name="goEditMovie" path="/WEB-INF/admin/edit_movie.jsp" />
+    </action>
+    <action
+      parameter="flag"
+      path="/index"
+      type="com.films.struts.action.IndexAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="index" path="/WEB-INF/public/index.jsp" />
+      <forward name="filmIndex" path="/WEB-INF/public/film_index.jsp" />
+      <forward name="upcoming" path="/WEB-INF/public/upcoming.jsp" />
+      <forward name="time" path="/WEB-INF/public/time.jsp" />
+      <forward name="quickBuy" path="/WEB-INF/public/side.jsp" />
+      <forward name="goHelp" path="/WEB-INF/public/help.jsp" />
+    </action>
+    <action
+      attribute="commentsForm"
+      input="/WEB-INF/public/index.jsp"
+      name="commentsForm"
+      parameter="flag"
+      path="/movie"
+      scope="request"
+      type="com.films.struts.action.MovieAction"
+      validate="false"
+      cancellable="true">
+      <forward name="goSingle" path="/WEB-INF/public/single.jsp" />
+      <forward name="firstLogin" path="/WEB-INF/public/login.jsp" />
+      
+    </action>
+    <action
+      attribute="seatForm"
+      input="/WEB-INF/public/step2.jsp"
+      name="seatForm"
+      parameter="flag"
+      path="/tickets"
+      scope="request"
+      type="com.films.struts.action.TicketsAction"
+      validate="false"
+      cancellable="true">
+      <forward name="goStep2" path="/WEB-INF/public/step2.jsp" />
+      <forward name="goStep3" path="/WEB-INF/public/step3.jsp" />
+      <forward name="goLogin" path="/WEB-INF/public/login.jsp" />
+      
+    </action>
+    <action
+      input="/WEB-INF/public/step3.jsp"
+      parameter="flag"
+      path="/paymentRequest"
+      type="com.films.struts.action.PaymentRequestAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="conected" path="/WEB-INF/public/connection.jsp" />
+    </action>
+    <action
+      attribute="searchForm"
+      name="searchForm"
+      parameter="flag"
+      path="/search"
+      scope="request"
+      type="com.films.struts.action.SearchAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="bingo" path="/WEB-INF/public/search.jsp" />
+      <forward name="404" path="/WEB-INF/public/404.jsp" />
+    </action>
+    
+
+  </action-mappings>
+ <!-- 配置请求处理器,就是把action的创建交给spring容器处理 -->
+  <controller>
+	 <set-property property="processorClass" value="org.springframework.web.struts.DelegatingRequestProcessor"/>
+  </controller> 
+  <message-resources parameter="com.films.struts.ApplicationResources" />
+</struts-config>
+

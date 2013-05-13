@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyEclipseStrutsProperties>
+    <strutsVersion>3</strutsVersion>
+    <basePackage>com.films.struts</basePackage>
+    <strutsPattern>0</strutsPattern>
+    <servletName>action</servletName>
+</MyEclipseStrutsProperties>

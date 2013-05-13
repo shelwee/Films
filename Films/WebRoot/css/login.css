@@ -1,0 +1,90 @@
+.content {
+    background: url("../images/login_bj.png") no-repeat scroll center top transparent;
+    height: 490px;
+    position: relative;
+    width: 1002px;
+}
+.content .login_bg {
+    background: url("../images/login_bg.png") no-repeat scroll 0 0 transparent;
+    height: 256px;
+    left: 611px;
+    padding: 48px 0 0 20px;
+    position: absolute;
+    top: 68px;
+    width: 318px;
+}
+.login_bg .tp {
+    height: 20px;
+    margin-bottom: 8px;
+    width: 240px;
+}
+.content .login_bg input {
+    color: #666666;
+    float: left;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    width: 190px;
+}
+.content .login_bg fieldset {
+    height: 29px;
+    line-height: 29px;
+    border:0;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+.content .login_bg label {
+    background: url("../images/lab_ico.png") no-repeat scroll center center transparent;
+    color: #000000;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    width: 66px;
+}
+.content .login_bg .reg {
+    background: url("../images/tips_ico.gif") no-repeat scroll left center transparent;
+    height: 18px;
+    line-height: 18px;
+    margin: 10px 0 0 43px;
+    padding-left: 25px;
+}
+.content .login_bg fieldset.at {
+    height: 20px;
+    line-height: 20px;
+}
+.content .login_bg fieldset {
+    height: 29px;
+    line-height: 29px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+input#autoLogin {
+    height: 21px;
+    margin-left: 72px;
+    width: 20px;
+}
+.content .login_bg label.auto {
+    background: none repeat scroll 0 0 transparent;
+    width: auto;
+}
+
+.content .login_bg a#login_submit {
+    background: url("../images/login_bt.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    height: 25px;
+    line-height: 20px;
+    margin-left: 75px;
+    text-align: center;
+    text-decoration: none;
+    width: 87px;
+}
+.content .login_bg .sub a {
+    color: #3399CC;
+    float: left;
+    height: 25px;
+    line-height: 30px;
+    text-decoration: underline;
+    vertical-align: bottom;
+}

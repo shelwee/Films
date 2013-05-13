@@ -1,0 +1,93 @@
+.sider{
+	float:right;
+	width: 229px;
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+.t_buy{
+	width: 229px;
+	height: 209px;
+	background-image:url("../images/quick_bg.png");
+	margin-bottom: 10px;
+}
+.t_buy h2{	
+	height: 30px;
+	line-height: 30px;
+	color: #069;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+}
+.t_buy h3{	
+	padding-top:10px;
+	color: #069;
+	font-weight: bold;
+	font-size: 14px;
+}
+.s_o{
+	margin: 15px 0 0 60px;
+}
+.s_o_w{
+	width: 138px;
+}
+.bt_submit{
+	display: block;
+	background: url(../images/bt_lan.gif) no-repeat;
+	width: 87px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	color: white;
+	margin: 18px 0 0 110px;
+}
+.comment{
+	margin-top:10px;
+	width: 229px;
+	background-color: #FFFFFD;
+}
+.comment h2{
+	width:229px;
+	height:44px;
+	color: #069;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align:center;	
+	background-image: url("../images/hot.gif");
+}
+.c_2{
+	
+} 
+.bbs{
+	background: url("../images/dot_line.gif") repeat-x 0 top;
+	border: 0;
+	height:73px;
+	padding-bottom: 8px;
+	margin-top: 6px;
+	color: #666;
+	border-left: 1px dotted #c6c6c6;
+	border-right: 1px dotted #c6c6c6;
+}
+.img60{
+	margin:0px;
+	width:48px;
+	height:48px;
+	border: 1px solid #68c6e1 ;
+}
+.bbsimg{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 6px 0 0 6px;
+}
+.bbsa{
+	float: right;
+	width: 170px;
+	margin: 6px 0 0 8px;
+	line-height: 18px;
+}
+.zazhi_b {
+	background: url(../images/zazhi_b.gif) top no-repeat;
+	width: 229px;
+	height: 6px;
+}

@@ -1,0 +1,141 @@
+body{
+	margin: 0;
+	font-size: 12px;
+	/*background-color: #E8EFF5;*/
+}
+body div .btn {
+	display: inline-block;
+	zoom: 1;
+	background: url(../images/btn.gif);
+	font: 12px/26px "����";
+	text-align: center;
+	color: white;
+	width: 87px;
+	height: 26px;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ol,ul{
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
+.clearfix {
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color: #00729D;
+}
+.err_red {
+    color: #EC51B4;
+}
+
+
+.box_t{height:5px; background:url(../images/box_border.gif) repeat-x 0 -5px;}
+.box_b{height:5px; background:url(../images/box_border.gif) repeat-x; margin-bottom: 30px;}
+.box_t div,.box_b div{float:left; width:5px; height:5px; background:url(../images/box_cor.gif) no-repeat;}
+.box_t .box_l{background-position:0 0;}
+.box_t .box_r{float:right; background-position:-5px 0;}
+.box_b .box_l{background-position:0 -5px;}
+.box_b .box_r{float:right;background-position:-5px -5px;}
+.wrap{
+	width: 1001px;	
+	height:705px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.content{
+	margin-top:10px;
+	float:left;
+	width: 762px;
+}
+.coll{
+	float: left;
+	width: 152px;
+}
+.bk {
+	border-top-color: white;
+	border-bottom: 0;
+	background: #EDEDED;
+	border: 1px solid #C6C6C6;
+	margin-left:1px;
+	overflow: hidden;
+}
+.coll ul li {
+	padding: 0px 3px 3px 3px;
+	background: white;
+}
+.coll ul li a {
+	display: block;
+	height: 23px;
+	font: 12px/24px "����";
+	color: #454545;
+	background: #E9E9E9;
+	padding-left: 36px;
+}
+.coll ul li a:hover, .coll ul li a.cur {
+	background: #54C1E1 url(../images/arr.gif) no-repeat 126px center;
+	color: white;
+}
+
+.cont{
+	margin-top:10px;
+	
+}
+.col_r {
+	float: right;
+	width: 839px;
+	overflow: hidden;
+}
+
+.eidtor .bk {
+	background: white url(../images/editor_bg.gif) repeat-x;
+	border-width: 0 1px;
+	padding: 20px 16px 10px;
+	font-family: "����","Arial Narrow";
+}
+.eidtor .cap {
+	background-image: url(../images/cap_bg2.gif);
+
+}
+.eidtor .cap_l {
+	background-image: url(../images/cap_l2.gif);
+}
+.eidtor .cap .ico2 {
+	width: 44px;
+	background: url(../images/ico.gif) no-repeat 0 -138px;
+	float: left;
+	padding: 0px 2px;
+}
+.cap {
+	height: 39px;
+	line-height: 40px;
+	background: url(../images/cap_bg.gif) repeat-x;
+	overflow: hidden;
+	position: relative;
+}
+.cap_l {
+	float: left;
+	width: 6px;
+	height: 39px;
+	background: url(../images/cap_l.gif);
+}
+.cap_r {
+	float: right;
+	width: 6px;
+	height: 39px;
+	background: url(../images/cap_r2.gif);
+}
+.ico {
+	background: url(../images/ico.gif) no-repeat;
+	padding: 4px 11px;
+}
+
+fieldset, img {
+    border: 0 none;
+}

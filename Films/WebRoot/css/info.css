@@ -1,0 +1,67 @@
+.cap .ico {
+	float: left;
+}
+.eidtor .cap .ico {
+	width: 171px;
+	height: 35px;
+	margin: 2px 0 0 15px;
+	background-position: 0 -40px;
+}
+.tab {
+height: 12px;
+border-bottom: 1px solid #C6C6C6;
+padding: 38px 0 6px;
+}
+.tab li {
+float: left;
+padding: 0 14px;
+border-right: 2px solid #2078B7;
+}
+.tab li.cur b {
+font-weight: bold;
+color: #2078B7;
+}
+.tab li b {
+font-weight: normal;
+cursor: pointer;
+}
+.tab_body {
+padding-top: 50px;
+display: none;
+}
+.tab_body dl dt {
+float: left;
+width: 126px;
+height: 122px;
+background: url(../images/user_admin_panel.gif) no-repeat;
+padding: 3px;
+margin-left: 70px;
+margin-right: 20px;
+display: inline;
+text-align: center;
+}
+.tab_body dl dd {
+float: left;
+width: 560px;
+}
+.tab_body th {
+text-align: right;
+padding-right: 12px;
+}
+.tab_body td, .tab_body th {
+line-height: 24px;
+padding: 0px 0 24px;
+vertical-align: top;
+font-size: 12px;
+}
+.tab_body th label {
+background: url(../images/s_arr.gif) no-repeat 0 center;
+padding: 0 10px 0 12px;
+white-space: nowrap;
+font-size: 12px;
+font-weight: normal;
+}
+.tab_body td span {
+color: #EC51B4;
+font-size: 12px;
+}

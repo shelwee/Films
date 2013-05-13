@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* 
+name:base.css;
+function:time card;
+creater:huzheng;
+modify:none;
+update-time:2011-06-15;
+*/
+.col_2 .tab .items h3{
+	margin:15px 0;
+	background:url(../images/cinema_bg.png) left top no-repeat;
+	padding:15px 0 0 20px;
+	font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;
+}
+.col_2 .tab .items h3 span{
+	font-size:18px;
+	font-weight:bold;
+	color:#F60;
+}
+.col_2 .tab .items h3 a{
+	color:#36C;
+	text-decoration:underline;
+	font-size:12px;
+	margin-left:20px;
+	font-weight:normal;
+}
+
+strong {
+	font-weight:bold;
+}
+ul.fileDetails {
+	padding-top:10px;
+}
+ul.fileDetails li {
+	padding-top: 5px;
+	padding-bottom:2px;
+}
+.fileLikeTitle {
+	border-top: 1px solid #CCC;
+	font-weight:bold;
+	font-size:12px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	color:#000;
+}
+.fileLikeValueBox {
+	background-color: #1da9dd;
+	padding:6px 10px;
+	font-size:18px;
+	color:#FFF;
+	font-weight: bold;
+	width: inherit;
+}
+.fileLikePerson {
+	padding:0px 10px;
+	font-size:14px;
+	color: #999　;
+	font-weight: bold;
+}
+a.filmFocus, a.filmFocus:visited {
+	padding:5px 5px;
+	color: #105a96;
+	text-decoration:underline;
+}
+a.filmFocus:hover {
+	color:#FFF;
+	background-color: #1da9dd;
+}
+a.fileLikeIcon, a.fileLikeIcon:visited {
+	padding:5px 5px;
+	font-size:14px;
+	color: #105a96　;
+}
+a.fileLikeIcon:hover {
+	color:#FFF;
+	background-color: #1da9dd;
+}
+.commentBox {
+	border-collapse:collapse;
+	font-size: 12px;
+	color: #666666;
+}
+.commentBox .top {
+	border-top: 1px dashed #CCC;
+	text-align:right;
+	vertical-align:top;
+	padding:2px 5px;
+}
+.commentBox .member {
+	text-align:center;
+	color: #105a96;
+	line-height:20px;
+	vertical-align:top;
+	padding: 0px 3px;
+}
+.commentBox .comment {
+	vertical-align:top;
+	padding:3px 8px;
+	width:95%;
+	min-height:53px;
+	background-color: transparent;
+}
+.commentBox .msgFrom {
+	text-align: left;
+	padding: 3px 8px;
+}
+.commentBox .top a, .commentBox .top a:visited {
+	color:#999;
+	font-size:11px;
+}
+.commentBox .top a:hover {
+	background-color:#999;
+	color:#fff;
+}
+.commentBox .msgActions {
+	text-align: right;
+	padding: 3px 5px;
+}
+.blueTxt {
+	color: #105a96;
+}
+.greyTxt {
+	color: #999;
+}
+.submitCommentTitle {
+	border-top: 1px dashed #CCC;
+	font-weight:bold;
+	font-size:12px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	color:#000;
+}
+.commentBtn {
+	padding:3px 15px;
+	background: url(../images/bt_lan.gif);
+	width: 57px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 16px;
+	color: white;
+	display: block;
+}
+.filmLikePopBox {
+	position: absolute;
+	margin-top:-5px;
+}
+.filmLikePopBoxInner {
+	position:relative;
+	border: 1px solid #c7c6c6;
+	max-height:300px;
+	min-width: 300px;
+	overflow-y: auto ;
+	margin-top:-1px;
+	background-color:#FFF;
+	z-index:1;
+	padding:10px;
+}
+.filmLikePopBoxInner .greyBox {
+	background-color:#e3e3e3;
+	text-align:center;
+	padding:3px;
+	color:#666;
+}
+.filmLikePopBoxInner .blueBox {
+	background-color:#21a9dd;
+	text-align:center;
+	color:#FFF;
+	padding:3px;
+}
+.filmLikePopBoxInner .greyTxt {
+	color:#666;
+	padding:3px 5px;
+}
+.filmLikePopBoxInner .blueTxt {
+	color:#105a96;
+	padding:5px 8px;
+}
+
+.PopBox {
+ BORDER: #abab98 1px solid;
+ FONT-SIZE: 12px;
+ Z-INDEX: 1000;
+ BACKGROUND: #fefeda;
+ COLOR: #5f5f52;
+ LINE-HEIGHT: 16px;
+ FONT-FAMILY: "Tahoma";
+ POSITION: absolute;
+ TEXT-ALIGN: left;
+ padding:4px;
+ margin-top:-4px;
+}
+
+.DingBox {
+ BORDER: #abab98 1px solid;
+ FONT-SIZE: 12px;
+ Z-INDEX: 1000;
+ BACKGROUND: #fefeda;
+ COLOR: #5f5f52;
+ LINE-HEIGHT: 10px;
+ FONT-FAMILY: "Tahoma";
+ POSITION: absolute;
+ TEXT-ALIGN: left;
+ padding:4px;
+ margin-top:-4px;
+}
