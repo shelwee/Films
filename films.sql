@@ -345,6 +345,4 @@ CREATE TABLE `users` (
 -- Records of users
 -- ----------------------------
 INSERT INTO `users` VALUES ('1', 'administrator', 'e10adc3949ba59abbe56e057f20f883e', null, '男', null, 'admin@shelwee.com', null, '', 'admin', null, '1.png');
-INSERT INTO `users` VALUES ('2', 'ShelWee', 'e10adc3949ba59abbe56e057f20f883e', '毛晓苇', '男', '15059534616', '20529004@qq.com', '20529004', '1990-10-19', 'user', '350521199010197530', '2.jpg');
-INSERT INTO `users` VALUES ('3', null, 'e10adc3949ba59abbe56e057f20f883e', null, '男', null, 'ShelWeeVIP@gmail.com', null, null, 'user', null, null);
 INSERT INTO `users` VALUES ('4', 'android', 'e10adc3949ba59abbe56e057f20f883e', null, '男', null, 'linux@qq.com', null, '', 'user', null, '4.jpg');
